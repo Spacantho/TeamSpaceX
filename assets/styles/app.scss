@@ -1,0 +1,34 @@
+
+@import "../fonts/CrimsonPro/static/CrimsonPro";
+@import "../fonts/Montserrat/fonts/webfonts/Montserrat.css";
+
+
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+
+@import "~bootstrap/scss/bootstrap";
+
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+
+
+/* base */
+@import
+  'base/base',
+  'base/responsive',
+  'base/simplon-config',
+  'base/utilities';
+
+
+// Components
+@import 'components/all';
+
+  /* layout section */
+@import "layouts/footer";
+@import "layouts/navbarre";
+
+
+
+  /* all pages scss */
+@import "pages/all";
