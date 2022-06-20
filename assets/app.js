@@ -11,6 +11,9 @@ import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
 
+
+import "@lottiefiles/lottie-player";
+
 import 'bootstrap'
 
 import 'owl.carousel';

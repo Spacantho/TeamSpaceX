@@ -82,6 +82,42 @@
 }
 
 
+// taille des textes font size 
+
+
+.verysmall {
+    font-size: 0.4em !important;
+}
+
+.small {
+    font-size: small;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+.xx-small {
+    font-size: xx-small;
+}
+
+/* soulignement titre */
+
+.title-underline-center {
+    border: 2px solid #222;
+    border-radius: 2em;
+    background-color: rgb(40, 73, 27);
+    width: 3.5rem;
+    float: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+
+
+
+
 
 
 
