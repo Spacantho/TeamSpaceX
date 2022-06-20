@@ -1,0 +1,123 @@
+:root {
+	// couleurs primaires :
+
+	/* --simplon-primary:
+	--simplon-secondary:
+	--simplon-tertiary:
+	--simplon-quartiary: */
+
+	// charte couleur
+
+	--simplon-charte-bordeaux: #D11328;
+	--simplon-charte-blanccasse: #F9F9F9;
+	--simplon-charte-marine: #1B3549;
+	--simplon-charte-grissombre: #898989;
+	--simplon-charte-light: #D0CECD;
+	--simplon-charte-noircasse: #333333;
+
+}
+
+// background-color de la charte graphique en classe 
+
+.bg-bordeaux {
+    background-color: var(--mascho-charte-bordeaux);
+}
+
+.bg-blanclight {
+    background-color: var(--mascho-charte-blanccasse);
+}
+
+.bg-marine {
+    background-color: var(--mascho-charte-marine);
+}
+
+.bg-grissombre {
+    background-color: var(--mascho-charte-grissombre);
+}
+
+.bg-light {
+    background-color: var(--mascho-charte-light);
+}
+
+.bg-noircasse {
+    background-color: var(--mascho-charte-noircasse);
+}
+
+// classe charte couleur des textes
+
+.colo-bordeaux {
+    color: var(--mascho-charte-bordeaux);
+}
+
+.colo-blanclight {
+    color: var(--mascho-charte-blanccasse);
+}
+
+.colo-marine {
+    color: var(--mascho-charte-marine);
+}
+
+.colo-grissombre {
+    color: var(--mascho-charte-grissombre);
+}
+
+.colo-light {
+    color: var(--mascho-charte-light);
+}
+
+.colo-noircasse {
+    color: var(--mascho-charte-noircasse);
+}
+
+
+
+// font google
+
+.mont {
+    font-family: Montserrat, "Segoe UI", sans-serif;
+}
+
+.crim {
+    font-family: "Crimson Pro", fantasy;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* espacement */
+.extra-space-m {
+	width: 100%;
+	height: 20px;
+}
+.extra-space-l {
+	width: 100%;
+	height: 40px;
+}
+.extra-space-xl {
+	width: 100%;
+	height: 60px;
+}
+.extra-space-xxl {
+	width: 100%;
+	height: 80px;
+}
