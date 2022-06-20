@@ -1,17 +1,7 @@
-
 /*==========  Mobile First ==========*/
 
 /*iPhone*/ 
 @media only screen and (min-width : 320px) {
-
-
-
-
-/*==========  Mobile First ==========*/
-
-/*iPhone */ 
-@media only screen and (min-width : 320px) {
-    
 
 }
 
@@ -23,6 +13,7 @@
 /* Tablets */
 @media only screen and (min-width : 768px) {
 
+
 }
 
 /* Desktops */
@@ -32,6 +23,7 @@
 
 /* Large  */
 @media only screen and (min-width : 1200px) {
+
 }
 
 
@@ -43,11 +35,12 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
 
 }
 
@@ -66,34 +59,40 @@
 @media (max-width: 1024px) {
 
 
+        /* .container {
+          padding-left: 20px;
+          padding-right: 20px;
+        } */
+
+
   }
 
 
   // Greater than
   @media (min-width: 1025px) { 
-      
-      
-    
-  }
-  
-  
-  // Greater than
-  @media (min-width: 1025px) {
-         
-        
-      
+          /* .container {
+            padding-left: 40px;
+            padding-right: 40px;
+          } */
+
 
     }
 
 
 /* App Content with container */
 @media (max-width: 1024px) {
-
+  /* .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    } */
   }
 
 
   @media (min-width: 1025px) {
-   
+     /* .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    } */
   }
 
 
@@ -108,29 +107,11 @@
 
   @media (min-width: 1025px) {
 
-  }
 
+        /* .container {
+          padding-left: 40px;
+          padding-right: 40px;
+        } */
 
-
-  }
-  
-  
-  @media (min-width: 1025px) {
-  
-  }
-  
-  
-  
-  /* Footer with container Element */
-  @media (max-width: 1024px) {
-    
-    
-    
-  }
-  
-  
-  @media (min-width: 1025px) {
-     
-     
 
   }
