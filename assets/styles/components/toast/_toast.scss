@@ -147,9 +147,6 @@
   
   
   @media only screen and (max-width: 1000px) {
-    .container {
-      width: 60%;
-    }
     .xd-message-icon,
     .xd-message-close {
       font-size: 1rem;
@@ -160,9 +157,9 @@
   }
   
   @media only screen and (max-width: 600px) {
-    .container {
+    /* .container {
       width: 80%;
-    }
+    } */
     .xd-message-icon,
     .xd-message-close {
       font-size: 1rem;
