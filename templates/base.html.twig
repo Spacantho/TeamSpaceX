@@ -14,6 +14,25 @@
         {% endblock %}
     </head>
     <body>
+    {% include "layouts/_navbarre.html.twig" %}
+
+
+
+    <main role="main">
+         
+         <!-- Primary Message -->
+      {#   <div class="container flashmessage">
+            <div class="xd-message">
+            {% include ('layouts/_flash_messages.html.twig') %}
+            </div>
+        </div>  #}
+
         {% block body %}{% endblock %}
+
+    </main>
+        
+
+
+     {% include "layouts/_footer.html.twig" %}
     </body>
 </html>

@@ -11,6 +11,18 @@ import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
 
+
+import "@lottiefiles/lottie-player";
+
 import 'bootstrap'
 
 import 'owl.carousel';
+
+
+var closesIcon = document.querySelectorAll('.xd-message .fa fa-close');
+
+closesIcon.forEach(function(closeIcon) {
+  closeIcon.addEventListener('click', function() {
+    this.parentNode.parentNode.classList.add('hide');
+  });
+});
