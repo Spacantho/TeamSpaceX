@@ -2,16 +2,26 @@
     height: 80px;
 } */
 
+.undernavblock {
+  height: 78px;
+  width: 100%;
+}
+
+.navbar {
+  border-bottom: 1px var(--simplon-charte-light) solid;
+}
+
 .logo-navbar {
     width: 123px;
     height: 36px;
 }
 
 .nav-link {
-    color: var(--simplon-charte-noircasse);
+    color: var(--simplon-charte-secondary);
+    font-size: 17px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
     color: var(--simplon-charte-bordeaux);
 }
 
@@ -21,6 +31,40 @@
     border-radius: 5px;
     margin: 0 10px;
     background-color: var(--simplon-charte-light);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: initial;
+    right: 0;
+}
+
+.profil {
+  display: inline-table;
+  width: 85px;
+  border-radius: 30px;
+  border: 1px var(--simplon-charte-light) solid;
+  padding: 0.25rem;
+    &:hover {
+          background-color: rgba(209, 19, 40, .6);
+      }
+      >.fa-angle-down {
+        transition: transform .4s;
+        transform: rotateX(0turn);
+      }
+  }
+
+.profil.show {
+  background-color: rgba(209, 19, 40, .6);
+    >.fa-angle-down {
+        transition: transform .4s;
+        transform: rotateX(0.5turn);
+    }
+}
+
+.profil-pic {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
 }
 
 // animate burger
@@ -34,7 +78,7 @@
   }
   .line {
     fill: none;
-    stroke: var(--simplon-charte-noircasse);
+    stroke: var(--simplon-charte-secondary);
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
