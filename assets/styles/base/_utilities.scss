@@ -15,9 +15,17 @@
 	--simplon-charte-light: #D0CECD;
 	--simplon-charte-noircasse: #333333;
 
+    --border-radius-global: 0.6rem;
+
+
 }
 
 // background-color de la charte graphique en classe 
+
+
+.simplon-round {
+    border-radius: var(--border-radius-global);
+  }
 
 .bg-bordeaux {
     background-color: var(--simplon-charte-bordeaux);
