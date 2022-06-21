@@ -1,28 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PagesController!{% endblock %}
+{% block title %}Hello PagesController!
+{% endblock %}
 
 {% block body %}
+	<header class="text-center text-white masthead bg-blue" style="background-size:cover;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-5 mx-auto position-relative">
+					<h1 class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima eius fugit possimus odit? Eaque magnam quibusdam magni officia laudantium veniam nostrum minima suscipit deleniti. Maxime tempora non dolorum delectus.</h1>
+				</div>
 
-<header class="text-center text-white masthead bg-marine" style="background-size:cover;">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 mx-auto position-relative">
-                <h1 class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima eius fugit possimus odit? Eaque magnam quibusdam magni officia laudantium veniam nostrum minima suscipit deleniti. Maxime tempora non dolorum delectus.</h1>
-            </div>
-            
-            <div class="col-md-5 col-lg-8 col-xl-7 mx-auto position-relative">
-                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_akfkzx0l.json" background="transparent" speed="2" style="width: 450px; height: 450px;" loop autoplay></lottie-player>            
-            </div>
-        </div>
-    </div>
-</header>
+				<div class="col-md-5 col-lg-8 col-xl-7 mx-auto position-relative">
+					<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_akfkzx0l.json" background="transparent" speed="2" style="width: 450px; height: 450px;" loop autoplay></lottie-player>
+				</div>
+			</div>
+		</div>
+	</header>
 
-{% include "layouts/_testimonialSimplon.html.twig" %}
-
-
+	{% include "layouts/_testimonialSimplon.html.twig" %}
 
 
 {% endblock %}
-

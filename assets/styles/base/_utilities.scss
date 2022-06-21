@@ -9,46 +9,39 @@
 	// charte couleur
 
 	--simplon-charte-bordeaux: #D11328;
-	--simplon-charte-blanccasse: #F9F9F9;
-	--simplon-charte-marine: #1B3549;
-	--simplon-charte-grissombre: #898989;
+	--simplon-charte-primary: #F9F9F9;
+	--simplon-charte-blue: #1B3549;
+	--simplon-charte-dark: #898989;
 	--simplon-charte-light: #D0CECD;
-	--simplon-charte-noircasse: #333333;
-
-    --border-radius-global: 0.6rem;
-
+	--simplon-charte-secondary: #333333;
+  --border-radius-global: 1.4rem;
 
 }
 
 // background-color de la charte graphique en classe 
 
-
-.simplon-round {
-    border-radius: var(--border-radius-global);
-  }
-
-.bg-bordeaux {
+.bg-red {
     background-color: var(--simplon-charte-bordeaux);
 }
 
-.bg-blanclight {
-    background-color: var(--simplon-charte-blanccasse);
+.bg-primary {
+    background-color: var(--simplon-charte-primary);
 }
 
-.bg-marine {
-    background-color: var(--simplon-charte-marine);
+.bg-blue {
+    background-color: var(--simplon-charte-blue);
 }
 
-.bg-grissombre {
-    background-color: var(--simplon-charte-grissombre);
+.bg-dark {
+    background-color: var(--simplon-charte-dark);
 }
 
 .bg-light {
     background-color: var(--simplon-charte-light);
 }
 
-.bg-noircasse {
-    background-color: var(--simplon-charte-noircasse);
+.bg-secondary {
+    background-color: var(--simplon-charte-secondary);
 }
 
 // classe charte couleur des textes
@@ -57,24 +50,24 @@
     color: var(--simplon-charte-bordeaux);
 }
 
-.colo-blanclight {
-    color: var(--simplon-charte-blanccasse);
+.colo-primary {
+    color: var(--simplon-charte-primary);
 }
 
-.colo-marine {
-    color: var(--simplon-charte-marine);
+.colo-blue {
+    color: var(--simplon-charte-blue);
 }
 
-.colo-grissombre {
-    color: var(--simplon-charte-grissombre);
+.colo-dark {
+    color: var(--simplon-charte-dark);
 }
 
 .colo-light {
     color: var(--simplon-charte-light);
 }
 
-.colo-noircasse {
-    color: var(--simplon-charte-noircasse);
+.colo-secondary {
+    color: var(--simplon-charte-secondary);
 }
 
 
@@ -88,7 +81,6 @@
 .crim {
     font-family: "Crimson Pro", fantasy;
 }
-
 
 // taille des textes font size 
 
@@ -108,6 +100,12 @@
 .xx-small {
     font-size: xx-small;
 }
+
+// radius
+
+.radius {
+    border-radius: var(--border-radius-global);
+  }
 
 /* soulignement titre */
 
