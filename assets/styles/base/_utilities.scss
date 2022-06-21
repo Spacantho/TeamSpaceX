@@ -46,27 +46,27 @@
 
 // classe charte couleur des textes
 
-.colo-bordeaux {
+.bordeaux {
     color: var(--simplon-charte-bordeaux);
 }
 
-.colo-primary {
+.primary {
     color: var(--simplon-charte-primary);
 }
 
-.colo-blue {
+.blue {
     color: var(--simplon-charte-blue);
 }
 
-.colo-dark {
+.dark {
     color: var(--simplon-charte-dark);
 }
 
-.colo-light {
+.light {
     color: var(--simplon-charte-light);
 }
 
-.colo-secondary {
+.secondary {
     color: var(--simplon-charte-secondary);
 }
 
@@ -89,16 +89,32 @@
     font-size: 0.4em !important;
 }
 
-.small {
-    font-size: small;
+.xx-small {
+    font-size: xx-small;
 }
 
 .x-small {
     font-size: x-small;
 }
 
-.xx-small {
-    font-size: xx-small;
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.large {
+    font-size: large;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.xx-large {
+    font-size: xx-large;
 }
 
 // radius
@@ -119,32 +135,6 @@
     margin-bottom: 30px;
     margin-top: 30px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* espacement */
 .extra-space-m {

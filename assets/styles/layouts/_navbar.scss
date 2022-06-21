@@ -33,6 +33,10 @@
     background-color: var(--simplon-charte-light);
 }
 
+.search-icon {
+  font-size: 25px;
+}
+
 .dropdown-menu[data-bs-popper] {
     left: initial;
     right: 0;
@@ -68,6 +72,10 @@
 }
 
 // animate burger
+
+.navbar-toggler:focus {
+  box-shadow: none; 
+}
 
 .menu {
     background-color: transparent;
