@@ -1,0 +1,12 @@
+   {{ form_start(form) }}
+                
+                <div class="mb-3"> {{ form_row(form.name , {'attr':{'placeholder': 'Ex: John', 'class': 'form-control' }} ) }}
+                </div>
+
+                
+                <div class="mb-3">{{ form_row(form.email , {'attr':{'placeholder': 'JohnDoe@hotmail.com', 'class': 'form-control' }} ) }}
+                 </div>
+
+                <div class="mb-3"> {{ form_row(form.message , {'attr':{'placeholder': 'Votre message ici...', 'class': 'form-control' }} ) }} </div>
+                <div class="mb-3"><button type="submit" class="boutonsimplon radius bg-red" formnovalidate>Envoyer</button></div>
+             {{ form_end(form) }}

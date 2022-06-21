@@ -6,47 +6,16 @@
     <div class="extra-space-l"></div>
     
     <div class="container">
-      
-
-        {# {{ form_start(form) }}
-            {{ form_widget(form) }}
-
-            {{ form_row(form.name , {'attr':{'placeholder': 'Ex: John' }} ) }}  label champ , error , help
-            {{ form_row(form.email , {'attr':{'placeholder': 'JohnDoe@hotmail.com' }} ) }}  
-            {{ form_row(form.message , {'attr':{'placeholder': 'Votre message ici...' }} ) }}  
-
-            <button type="submit" formnovalidate>Envoyer</button>
-        {{ form_end(form) }} #}
-
-      
-
-                {# {{ form_widget(form) }} #}
+                    {# {{ form_widget(form) }} #}
 
                  {# label champ , error , help #}
                  
-               
-
-                
-           
-
-
         <section class="contact-clean">
                 <h2 class="text-center">Contactez-nous</h2>
 
-              <div id="contact">
-                {{ form_start(form) }}
-                
-                <div class="mb-3"> {{ form_row(form.name , {'attr':{'placeholder': 'Ex: John', 'class': 'form-control' }} ) }}
-                </div>
-
-                
-                <div class="mb-3">{{ form_row(form.email , {'attr':{'placeholder': 'JohnDoe@hotmail.com', 'class': 'form-control' }} ) }}
-                 </div>
-
-                <div class="mb-3"> {{ form_row(form.message , {'attr':{'placeholder': 'Votre message ici...', 'class': 'form-control' }} ) }} </div>
-                <div class="mb-3"><button type="submit" class="boutonsimplon simplon-round bg-charte-bordeaux" formnovalidate>Envoyer</button></div>
-             {{ form_end(form) }}
-        </div>
+            <div id="contact">
+                {% include "messages/_form.html.twig" %}
+           </div>
         </section>
 
     </div>
