@@ -3,6 +3,8 @@
 {% block title 'Contact' %}
 
 {% block body %}
+    <div class="extra-space-l"></div>
+    
     <div class="container">
       
 
@@ -29,9 +31,10 @@
 
 
         <section class="contact-clean">
+                <h2 class="text-center">Contactez-nous</h2>
+
               <div id="contact">
                 {{ form_start(form) }}
-            <h2 class="text-center">Contactez-nous</h2>
                 
                 <div class="mb-3"> {{ form_row(form.name , {'attr':{'placeholder': 'Ex: John', 'class': 'form-control' }} ) }}
                 </div>
@@ -41,12 +44,13 @@
                  </div>
 
                 <div class="mb-3"> {{ form_row(form.message , {'attr':{'placeholder': 'Votre message ici...', 'class': 'form-control' }} ) }} </div>
-                <div class="mb-3"><button type="submit" class="btn btn-primary" formnovalidate>Envoyer</button></div>
+                <div class="mb-3"><button type="submit" class="boutonsimplon simplon-round bg-charte-bordeaux" formnovalidate>Envoyer</button></div>
              {{ form_end(form) }}
         </div>
         </section>
 
     </div>
-    
+
+    <div class="extra-space-l"></div>    
 
 {% endblock %}

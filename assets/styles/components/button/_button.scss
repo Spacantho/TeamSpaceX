@@ -1,0 +1,27 @@
+.boutonsimplon {
+    width: 20%;
+      text-align: center;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      font-weight: 500;
+     padding: 1%;
+      color: #fff !important;
+      -webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s ease-in-out;
+    
+  }
+  .boutonsimplon:hover{
+    cursor: pointer;
+    border: 1px solid transparent !important;
+    background-color: #ffffff !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    -webkit-transition: background-color 1s ease-in-out 0s;
+    -o-transition: background-color 1s ease-in-out 0s;
+    transition: background-color 1s ease-in-out 0s;
+    -webkit-transition: color 400ms ease-in-out 0s;
+    -o-transition: color 400ms ease-in-out 0s;
+    transition: color 400ms ease-in-out 0s;
+  }

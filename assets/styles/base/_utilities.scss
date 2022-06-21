@@ -14,6 +14,7 @@
 	--simplon-charte-dark: #898989;
 	--simplon-charte-light: #D0CECD;
 	--simplon-charte-secondary: #333333;
+  --border-radius-global: 1.4rem;
 
 }
 
@@ -99,6 +100,12 @@
 .xx-small {
     font-size: xx-small;
 }
+
+// radius
+
+.radius {
+    border-radius: var(--border-radius-global);
+  }
 
 /* soulignement titre */
 
