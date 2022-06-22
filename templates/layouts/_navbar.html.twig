@@ -1,55 +1,76 @@
-<nav class="navbar navbar-expand-lg bg-light mont fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img class="logo-navbar me-3 my-2" src="{{ asset('img/simplon_logo.png') }}" alt="Logo Simplon"></a>
-    <button class="navbar-toggler menu" type="button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <svg width="40" height="40" viewBox="0 0 100 100">
-        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-        <path class="line line2" d="M 20,50 H 80" />
-        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-      </svg>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Formations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Apprenants</a>
-        </li>
-        <div class="nav-separator d-none d-lg-block"></div>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Entreprise</a>
-        </li>
-      </ul>
-      <div class="d-flex justify-content-between">
-        <i class=" search-icon fa-solid fa-magnifying-glass align-self-center"></i>
+<nav class="navbar navbar-expand-lg bg-first mont fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="#"><img class="logo-navbar me-3 my-2" src="{{ asset('img/simplon_logo.png') }}" alt="Logo Simplon"></a>
+		<button class="navbar-toggler menu" type="button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<svg width="40" height="40" viewbox="0 0 100 100">
+				<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+				<path class="line line2" d="M 20,50 H 80"/>
+				<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+			</svg>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Formations
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li>
+							<a class="dropdown-item" href="#">Action</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Another action</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Apprenants</a>
+				</li>
+				<div class="nav-separator d-none d-lg-block"></div>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Entreprise</a>
+				</li>
+			</ul>
+			<div class="d-flex justify-content-between">
+				<i class=" search-icon fa-solid fa-magnifying-glass align-self-center"></i>
 
-          <div class="nav-item dropdown ms-3">
-              <a class="nav-link profil" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="profil-pic" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte">
-                  <i class="fa-solid fa-angle-down mx-2"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img class="profil-pic me-2" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte"> Anthony Tourolle</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-book me-2"></i>Tableau de bord</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-feather-pointed me-2"></i>Écrire un article</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell me-2"></i>Notifications</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off me-2"></i></i>Déconnexion</a></li>
-              </ul>
-          </div>
-        </div>
-    </div>
-</nav>
-<div class="undernavblock"></div>
+				<div class="nav-item dropdown ms-3">
+					<a class="nav-link profil" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img class="profil-pic" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte">
+						<i class="fa-solid fa-angle-down mx-2"></i>
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li>
+							<a class="dropdown-item" href="#"><img class="profil-pic me-2" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte">
+								Anthony Tourolle</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="#">
+								<i class="fa-solid fa-address-book me-2"></i>Tableau de bord</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="#">
+								<i class="fa-solid fa-feather-pointed me-2"></i>Écrire un article</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="#">
+								<i class="fa-solid fa-bell me-2"></i>Notifications</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="#">
+								<i class="fa-solid fa-power-off me-2"></i>
+							</i>Déconnexion</li>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div></nav><div class="undernavblock"></div>
