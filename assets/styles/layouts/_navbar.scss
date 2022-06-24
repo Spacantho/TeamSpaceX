@@ -22,7 +22,21 @@
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: var(--simplon-charte-bordeaux);
+    color: var(--simplon-charte-red);
+}
+
+.formations {
+  >.fa-angle-down {
+    transition: transform .4s;
+    transform: rotateX(0turn);
+  }
+}
+
+.formations.show {
+  >.fa-angle-down {
+    transition: transform .4s;
+    transform: rotateX(0.5turn);
+  }
 }
 
 .nav-separator {
