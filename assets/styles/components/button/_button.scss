@@ -1,13 +1,13 @@
 .boutonsimplon {
     width: 20%;
-      text-align: center;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      font-weight: 500;
-     padding: 1%;
-      color: #fff !important;
-      -webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
-      box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.3%;
+    color: #fff !important;
+    -webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
     text-decoration: none;
     list-style: none;
     border: none !important;
@@ -16,7 +16,6 @@
   }
   .boutonsimplon:hover{
     cursor: pointer;
-    border: 1px solid transparent !important;
     background-color: #ffffff !important;
     color: rgba(0, 0, 0, 0.8) !important;
     -webkit-transition: background-color 1s ease-in-out 0s;
@@ -26,3 +25,45 @@
     -o-transition: color 400ms ease-in-out 0s;
     transition: color 400ms ease-in-out 0s;
   }
+
+.btntrans {
+  background: none;
+  border-radius: 4px;
+  border: 2px var(--simplon-charte-second) solid;
+  color: var(--simplon-charte-second);
+  transition: .3s;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: var(--simplon-charte-second) !important;
+    color: var(--simplon-charte-first) !important;
+    -webkit-transition: background-color .3s ease-in-out 0s;
+    -o-transition: background-color .3s ease-in-out 0s;
+    transition: background-color .3s ease-in-out 0s;
+    -webkit-transition: color 400ms ease-in-out 0s;
+    -o-transition: color 400ms ease-in-out 0s;
+    transition: color 400ms ease-in-out 0s;
+  }
+}
+
+.btnred {
+  background: none;
+  border-radius: 4px;
+  border: 2px var(--simplon-charte-red) solid;
+  color: var(--simplon-charte-red);
+  transition: .3s;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: var(--simplon-charte-red) !important;
+    color: var(--simplon-charte-first) !important;
+    -webkit-transition: background-color .3s ease-in-out 0s;
+    -o-transition: background-color .3s ease-in-out 0s;
+    transition: background-color .3s ease-in-out 0s;
+    -webkit-transition: color 400ms ease-in-out 0s;
+    -o-transition: color 400ms ease-in-out 0s;
+    transition: color 400ms ease-in-out 0s;
+  }
+}
