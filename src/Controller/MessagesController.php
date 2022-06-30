@@ -3,11 +3,12 @@
 namespace App\Controller;
 
 
-use Symfony\Component\Form\FormInterface;
 use App\Form\MessageType;
+use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MessagesController extends AbstractController
@@ -21,6 +22,8 @@ class MessagesController extends AbstractController
             
 
             $form->handleRequest($request);
+
+           
 
                     if ($form->isSubmitted() && $form->isValid()) {
 
