@@ -1,73 +1,84 @@
 :root {
 	// couleurs primaires :
 
-	/* --simplon-primary:
-	--simplon-secondary:
+	/* --simplon-first:
+	--simplon-second:
 	--simplon-tertiary:
 	--simplon-quartiary: */
 
 	// charte couleur
 
-	--simplon-charte-bordeaux: #D11328;
-	--simplon-charte-primary: #F9F9F9;
+	--simplon-charte-red: #D11328;
+	--simplon-charte-first: #F9F9F9;
 	--simplon-charte-blue: #1B3549;
-	--simplon-charte-dark: #898989;
+	--simplon-charte-gdark: #898989;
+	--simplon-charte-slight: #F0F0F0;
 	--simplon-charte-light: #D0CECD;
-	--simplon-charte-secondary: #333333;
-  --border-radius-global: 0.6rem;
+	--simplon-charte-second: #333333;
+    --border-radius-global: 0.6rem;
 
 }
 
 // background-color de la charte graphique en classe 
 
-.bg-red {
-    background-color: var(--simplon-charte-bordeaux);
+
+.bg-first {
+    background-color: var(--simplon-charte-first);
 }
 
-.bg-primary {
-    background-color: var(--simplon-charte-primary);
+.bg-second {
+    background-color: var(--simplon-charte-second);
+}
+
+.bg-slight {
+    background-color: var(--simplon-charte-slight);
+}
+
+.bg-glight {
+    background-color: var(--simplon-charte-light);
+}
+
+.bg-gdark {
+    background-color: var(--simplon-charte-gdark);
+}
+
+.bg-red {
+    background-color: var(--simplon-charte-red);
 }
 
 .bg-blue {
     background-color: var(--simplon-charte-blue);
 }
 
-.bg-dark {
-    background-color: var(--simplon-charte-dark);
-}
-
-.bg-light {
-    background-color: var(--simplon-charte-light);
-}
-
-.bg-secondary {
-    background-color: var(--simplon-charte-secondary);
-}
-
 // classe charte couleur des textes
 
-.colo-bordeaux {
-    color: var(--simplon-charte-bordeaux);
+
+.first {
+    color: var(--simplon-charte-first);
 }
 
-.colo-primary {
-    color: var(--simplon-charte-primary);
+.second {
+    color: var(--simplon-charte-second);
 }
 
-.colo-blue {
-    color: var(--simplon-charte-blue);
+.slight {
+    color: var(--simplon-charte-slight);
 }
 
-.colo-dark {
-    color: var(--simplon-charte-dark);
-}
-
-.colo-light {
+.glight {
     color: var(--simplon-charte-light);
 }
 
-.colo-secondary {
-    color: var(--simplon-charte-secondary);
+.gdark {
+    color: var(--simplon-charte-gdark);
+}
+
+.red {
+    color: var(--simplon-charte-red);
+}   
+
+.blue {
+    color: var(--simplon-charte-blue);
 }
 
 
@@ -89,16 +100,32 @@
     font-size: 0.4em !important;
 }
 
-.small {
-    font-size: small;
+.xx-small {
+    font-size: xx-small;
 }
 
 .x-small {
     font-size: x-small;
 }
 
-.xx-small {
-    font-size: xx-small;
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.large {
+    font-size: large;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.xx-large {
+    font-size: xx-large;
 }
 
 // radius
@@ -119,32 +146,6 @@
     margin-bottom: 30px;
     margin-top: 30px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* espacement */
 .extra-space-m {
