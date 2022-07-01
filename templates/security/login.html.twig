@@ -1,8 +1,12 @@
-{% extends 'base.html.twig' %}
+{% extends 'base_grid.html.twig' %}
 
 {% block title %}Hello SecurityController!{% endblock %}
 
 {% block body %}
+
+<div class="container my-5 d-flex justify-content-center">
+
+<div class="card px-5 py-5 bg-light radius">
 <form method="post" class="">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -36,10 +40,14 @@
  #}    </div>
 
 
-    <button class="btn btn-lg btn-primary" type="submit">
+    <button class="btn btn-lg bg-red text-white" type="submit">
         Se connecter
     </button>
 </form>
+
+</div>
+
+</div>
 
 
 {% endblock %}

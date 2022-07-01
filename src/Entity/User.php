@@ -173,7 +173,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public function getEmail(): ?string
     {
-        if(!$this->confirmedEmails->isEmpty()) {
+        if(!$this->emailConfirmations->isEmpty()) {
             return (string)$this->getEmailConfirmations()->last()->getEmail();
         }
 
@@ -218,7 +218,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public function getEmailIndications(): Collection
     {
-        return $this->indicatedEmails;
+        return $this->emailIndications;
     }
 
     public function addEmailIndication(EmailIndication $emailIndication): self
