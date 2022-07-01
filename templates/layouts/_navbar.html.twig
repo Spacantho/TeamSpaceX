@@ -76,14 +76,14 @@
           {% else %}
           
           <div class="nav-item dropdown ms-3">
-              <a class="nav-link profil" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link profil" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <img class="profil-pic" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte">
                   <i class="fa-solid fa-angle-down mx-2"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img class="profil-pic me-2" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte"> Anthony Tourolle</a></li>
+                  <li><a class="dropdown-item" href="{{ path('app_profil') }}"><img class="profil-pic me-2" src="{{ asset('img/default.png')}}" alt="Photo de profil du compte">  {{ app.user }}</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-book me-2"></i>Tableau de bord</a></li>
+                  <li><a class="dropdown-item" href="{{ path('app_profil') }}"><i class="fa-solid fa-address-book me-2"></i>Tableau de bord</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-feather-pointed me-2"></i>Écrire un article</a></li>
                   <li><hr class="dropdown-divider"></li>

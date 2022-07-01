@@ -14,10 +14,12 @@ class ProfilController extends AbstractController
     #[Route('/profil', name: 'app_profil')]
     public function index(): Response
     {
-        return $this->render('profil/index.html.twig');
+        return $this->render('profil/index.html.twig', [
+            'controller_name' => 'ProfilController',
+        ]);
     }
 
-    #[Route('/profil/mail_messageconfirmation', name: 'app_profil_mail_confirmation')]
+    #[Route('/profil/mail_confirmationb', name: 'app_profil_mail_confirmation')]
     public function mail_confirmation(User $userService, VerificationEmail $verificationEmail, Request $request): Response
     {
         $userService::envoyerMailConfirmation(request: $request, verificationEmail: $verificationEmail, user: $this->getUser());
@@ -25,6 +27,7 @@ class ProfilController extends AbstractController
         $this->addFlash('info', 'Mail de confirmation envoyé');
         return $this->redirectToRoute('app_profil', [], Response::HTTP_SEE_OTHER);
     }
+
 
 
 }

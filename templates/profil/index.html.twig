@@ -4,4 +4,26 @@
 
 {% block body %}
 
+
+                    <div class="container  my-5 d-flex justify-content-center">
+                        <div class="example-wrapper">
+                            {% if not app.user %}
+                                <p>Veuillez vous connecter !</p>
+                                <a class="" href="{{path('app_login')}}">Se connecter</a>
+                            {% else %}
+                            <h1>Bonjour {{ app.user }} ! </h1>
+
+                            <div>
+                                <p>Statut vérifié : {{ app.user.verified ? '✅' : '❌' }}</p>
+                                {% if not app.user.verified %}
+                                    <a href="{{path('app_profil_mail_confirmation')}}" class="btn btn-secondary">Renvoyer le mail de confirmation</a>
+                                {% endif %}
+                            </div>
+
+                            {% endif %} {# // if not app.user  #}
+
+                        </div> 
+                    </div>
+
+
 {% endblock %}

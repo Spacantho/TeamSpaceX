@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Repository\UserRepository;
-use App\Security\EmailVerifier;
 use App\Security\VerificationEmail;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,7 +22,7 @@ class User
     public static function envoyerMailConfirmation(Request $request, VerificationEmail $verificationEmail, \App\Entity\User $user): void
     {
         try {
-            $verificationEmail->sendEmailConfirmation('app_verification_email', $user,
+            $verificationEmail->sendEmailConfirmation('app_verify_email', $user,
                 (new TemplatedEmail())
                     ->from(new Address('EmailConfirmation@simplon.fr', 'Simplon Charleville'))
                     ->to($user->getEmail())
