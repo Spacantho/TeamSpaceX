@@ -81,6 +81,15 @@
     color: var(--simplon-charte-blue);
 }
 
+//link
+
+.ensavoirplus {
+    color: var(--simplon-charte-red);
+    text-decoration: none;
+    &:hover {
+        color: rgb(163, 13, 30)
+    }
+}
 
 
 // font google
@@ -117,7 +126,7 @@
 }
 
 .large {
-    font-size: large;
+    font-size: calc(1.125rem + 2px);
 }
 
 .x-large {
