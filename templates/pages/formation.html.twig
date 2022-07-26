@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formations
+{% endblock %}
+
+{% block body %}
+	
+	{# header #}
+    <header class="masthead bg-slight second pb-5" style="background-size:cover;">
+		<div class="container">
+			<div class="extra-space-xl"></div>
+			<div class="d-block  d-lg-flex justify-content-between">
+				<div class="align-self-center container my-5">
+					<h1 class="mb-4">
+						<strong class="raleway">Nom de la formation</strong>
+					</h1>
+					<h2 class="mb-4">Nom de la formation : phrase d'accroche</h2>
+                    <div class="d-flex large">
+                         <div class="me-4"><i class="fa-solid fa-landmark"></i> Diplôme</div>
+                         <div><i class="fa-solid fa-calendar-days"></i> Durée</div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</header>
+
+	{# stat #}
+    <section class="bg-first testimonials justify-content-between">
+	<div class="container">
+		<div class="row justify-content-around">
+        <div class="col-lg-3 flex-column">
+            <div class="d-flex justify-content-center">
+                <lottie-player src="{{asset('img/lottie_graph.json')}}" background="transparent" speed="1" style="width: 240px; height: 180px;" loop autoplay></lottie-player>
+            </div>
+			<div class="d-flex justify-content-center my-4">
+				<div class="bg-blue first p-2 me-2 fit radius align-self-center">+3,6%</div>
+				<div class="align-self-center">C’est la croissance du secteur du numérique en 2018</div>
+			</div>
+		</div>
+        <div class="col-lg-3 flex-column">
+            <div class="d-flex justify-content-center">
+                <lottie-player src="{{asset('img/lottie_brain.json')}}" background="transparent" speed="2" style="width: 240px; height: 180px;" loop autoplay></lottie-player>
+            </div>
+			<div class="d-flex justify-content-center my-4">
+				<div class="bg-blue first p-2 me-2 fit radius align-self-center nowrap">232 000</div>
+				<div class="align-self-center">C'est le nombre de postes à pourvoir entre 2017 et 2027</div>
+			</div>
+		</div>
+         <div class="col-lg-3 flex-column">
+            <div class="d-flex justify-content-center">
+                <lottie-player src="{{asset('img/lottie_coin.json')}}" background="transparent" speed="1" style="width: 240px; height: 180px;" loop autoplay></lottie-player>
+            </div>
+			<div class="d-flex justify-content-center my-4">
+				<div class="bg-blue first p-2 me-2 fit radius align-self-center">revenu</div>
+				<div class="align-self-center">C’est le revenu annuel brut moyen d’un·e "métier" en France</div>
+			</div>
+		</div>
+        </div>
+	</div>
+</section>
+
+{# tabs #}
+<nav>
+	<div class="nav nav-tabs d-flex justify-content-evenly mont" id="nav-tab" role="tablist">
+		<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Présentation</button>
+		<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Compétences</button>
+		<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Admission</button>
+	</div>
+</nav>
+<div class="container">
+	<div class="extra-space-xl"></div>
+	<h2 class="bg-red x-large first mont fit p-2">"Nom Formation"</h2>  
+	<div class="extra-space-m"></div>
+</div>
+<div class="tab-content container" style="height: 60vh" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+		<h2 class="bg-second large first mont fit p-2 mb-4">Présentation</h2>
+		<div class="row">
+			<div class="col-lg-7">
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, neque culpa nemo impedit veritatis, tempora quasi quisquam doloremque harum pariatur quos magnam alias nam libero iusto amet ipsum. Sit, fugiat.
+				Iure delectus perspiciatis ducimus veritatis, ex ipsum ea quos soluta sed minus officia laboriosam eligendi recusandae distinctio nulla voluptatum ratione perferendis. Non dolorum quod porro illo pariatur fugit eaque ducimus.
+				Reprehenderit excepturi hic animi nisi, architecto tempora quos sequi officia vel maxime nesciunt rerum sapiente doloribus, laborum itaque? Quasi at, velit quod tempore non sapiente facilis iste sint nihil id!
+				Hic consequatur, sapiente dolores saepe eaque, sed ipsam quia porro, sit enim asperiores eius nostrum at unde corrupti voluptatum? Earum veritatis commodi iusto! Et reprehenderit omnis in adipisci nesciunt ex.
+				Ea quos veniam corporis provident recusandae earum expedita dignissimos odio. Laudantium ipsa porro, alias distinctio excepturi quod, aspernatur ab, incidunt delectus nisi voluptas deserunt! Voluptate similique nihil odio sed expedita?</p>
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+	<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+</div>
+{% endblock %}

@@ -12,7 +12,7 @@
 	--simplon-charte-first: #F9F9F9;
 	--simplon-charte-blue: #1B3549;
 	--simplon-charte-gdark: #898989;
-	--simplon-charte-slight: #F0F0F0;
+	--simplon-charte-slight: #fefefe;
 	--simplon-charte-light: #D0CECD;
 	--simplon-charte-second: #333333;
     --border-radius-global: 0.6rem;
@@ -98,10 +98,6 @@
     font-family: Montserrat, "Segoe UI", sans-serif;
 }
 
-.crim {
-    font-family: "Crimson Pro", fantasy;
-}
-
 // taille des textes font size 
 
 
@@ -171,5 +167,26 @@
 }
 .extra-space-xxl {
 	width: 100%;
-	height: 80px;
+	height: 79px;
+}
+
+//fit
+
+.fit {
+    width: fit-content;
+    height: fit-content;
+}
+
+.fit-h {
+    height: fit-content;
+}
+
+.fit-w {
+    width: fit-content;
+}
+
+//wrap 
+
+.nowrap {
+    white-space: nowrap;
 }
